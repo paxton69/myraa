@@ -2,7 +2,7 @@
 /* MYRAA public site. No frameworks, no third-party scripts, DOM built with textContent only. */
 
 /* ---------- Verified downloads (fail closed) ---------- */
-const targetIds={windows:'windows-release',android:'android-release'};
+const targetIds={android:'android-release'}; // Windows and iPhone are "Coming soon" in index.html
 const allowed=(url,ext)=>{
  try{const u=new URL(url);return u.protocol==='https:'&&u.hostname==='github.com'&&
   /^\/[^/]+\/[^/]+\/releases\/download\/[^/]+\/[^/]+$/.test(u.pathname)&&u.pathname.toLowerCase().endsWith(ext)&&!u.search&&!u.hash}

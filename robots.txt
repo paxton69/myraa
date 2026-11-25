@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /owner
 Disallow: /v1/
-Sitemap: https://myraa.pages.dev/sitemap.xml
+Sitemap: https://paxton69.github.io/myraa/sitemap.xml
