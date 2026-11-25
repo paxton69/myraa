@@ -68,9 +68,8 @@ h3{font-size:1.16rem;letter-spacing:-.015em;font-weight:650}
 .top:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;pointer-events:none;
  background:linear-gradient(90deg,transparent,rgba(62,230,196,.35) 30%,rgba(139,140,255,.35) 70%,transparent);opacity:.6}
 .logo{font-weight:800;letter-spacing:.16em;display:flex;align-items:center;gap:10px;font-size:.95rem;color:var(--h-ink);min-height:40px}
-.mark{position:relative;width:22px;height:22px;border-radius:50%;flex:none;
- background:radial-gradient(circle at 32% 28%,#fff 0 6%,rgba(255,255,255,.5) 12%,transparent 30%),radial-gradient(circle at 70% 78%,rgba(139,140,255,.9),transparent 60%),radial-gradient(circle,#3EE6C4 0,#2bbfae 45%,#2a6f9c 80%,#1b2550 100%);
- box-shadow:0 0 0 1px rgba(124,219,255,.25),0 0 16px rgba(62,230,196,.4)}
+.mark{position:relative;width:26px;height:26px;flex:none;
+ background:url(mark.svg) center/contain no-repeat;filter:drop-shadow(0 0 6px rgba(62,230,196,.35))}
 .top nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;font-size:.9rem;color:var(--h-ink-2)}
 .top nav a:not(.button){position:relative;padding:8px 2px;transition:color var(--h-d-2) var(--h-ease)}
 .top nav a:not(.button):after{content:"";position:absolute;left:2px;right:2px;bottom:2px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--h-mint),var(--h-cyan));
@@ -321,7 +320,7 @@ ul.grid{list-style:none;padding:0;margin:0}
 /* ---------- Footer ---------- */
 .foot{border-top:1px solid var(--h-line);width:min(var(--col),calc(100% - 2*var(--gut)));margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:28px 0 36px;color:var(--h-ink-3);font-size:.86rem}
 .foot-brand{display:inline-flex;align-items:center;gap:10px}
-.foot-brand .mark{width:16px;height:16px}
+.foot-brand .mark{width:18px;height:18px}
 .foot div{display:flex;gap:20px;flex-wrap:wrap}
 .foot a{padding:6px 0;transition:color var(--h-d-2) var(--h-ease)}
 .foot a:hover{color:var(--h-ink)}
@@ -448,7 +447,7 @@ h1 .w{display:inline-block}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes fadeIn{from{opacity:0}}
 @keyframes chipIn{from{opacity:0;transform:translate3d(0,10px,0) scale(.94)}}
-@keyframes markIn{0%{opacity:0;transform:scale(.3) rotate(-90deg)}70%{transform:scale(1.12)}}
+@keyframes markIn{0%{opacity:0;transform:scale(.55)}70%{opacity:1;transform:scale(1.08)}}
 @keyframes wordIn{from{opacity:0;filter:blur(8px);transform:translateX(-6px)}}
 @keyframes rise{from{opacity:0;transform:translate3d(0,12px,0)}}
 @keyframes wordRise{from{opacity:0;transform:translate3d(0,.45em,0) scale(.98)}}

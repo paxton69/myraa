@@ -2,10 +2,10 @@
   "schema": "MYRAA-RELEASES-V1",
   "windows": null,
   "android": {
-    "version": "2.21.8",
-    "url": "https://github.com/paxton69/myraa/releases/download/v2.21.8/MYRAA-android-2.21.8.apk",
-    "sha256": "937b1daeeba90e3f61d226949fc60c15c2b98a5233797425853e373eeedde711",
-    "bytes": 82405090,
+    "version": "2.21.9",
+    "url": "https://github.com/paxton69/myraa/releases/download/v2.21.9/MYRAA-android-2.21.9.apk",
+    "sha256": "e554cbc4c931874068482abc5d655ea5c5a92ea55ad94e55371759f0061575d7",
+    "bytes": 82415206,
     "notes": "Public beta. Pair with your own PC by QR."
   },
   "notes": "Android public beta. iPhone and Windows coming soon."
