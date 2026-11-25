@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MYRAA | Your AI companion</title>
+<meta name="description" content="MYRAA is a beta AI companion for Windows and Android. It talks, thinks and runs your home, with local-first privacy. Releases are published with verifiable checksums.">
+<meta name="theme-color" content="#0A0C10">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://myraa.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MYRAA">
+<meta property="og:title" content="MYRAA | Your AI companion">
+<meta property="og:description" content="Talks, thinks, and runs your home. Beta for Windows and Android.">
+<meta property="og:url" content="https://myraa.pages.dev/">
+<meta property="og:image" content="https://myraa.pages.dev/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+<script src="intro.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body class="home">
+<a class="skip" href="#main">Skip to content</a>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="h-stream" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="60" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#3EE6C4"/><stop offset=".5" stop-color="#7CDBFF"/><stop offset="1" stop-color="#8B8CFF"/></linearGradient></defs></svg>
+
+<header class="top">
+ <a class="logo" href="index.html" aria-label="MYRAA home"><span class="mark" aria-hidden="true"></span><span>MYRAA</span></a>
+ <nav class="nav" aria-label="Primary">
+  <div class="nav-links">
+   <a href="#how">How it works</a><a href="#models">Models</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a>
+  </div>
+  <a class="button sm nav-cta" href="#download">Download</a>
+ </nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+ <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+ <div class="hero-grid-floor" aria-hidden="true"></div>
+ <div class="hero-inner">
+  <div class="hero-copy">
+   <p class="kicker"><span class="dot" aria-hidden="true"></span>Open beta &middot; Windows &amp; Android</p>
+   <h1 id="hero-title"><span class="w">Your</span> <span class="w">AI</span> <span class="w">companion.</span><br><em>Talks, thinks, and runs your home.</em></h1>
+   <p class="intro">MYRAA holds a real voice conversation, remembers what matters to you, and switches your lights from a word. Built local-first: your chats, voice and files are not sent to the MYRAA owner dashboard.</p>
+   <div class="hero-actions">
+    <a class="button lg" href="#download"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Download the beta</a>
+    <a class="button subtle lg" href="#models">Meet the models</a>
+   </div>
+   <ul class="trust-row" aria-label="What you can count on">
+    <li><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Local-first by design</li>
+    <li><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Reporting off by default</li>
+    <li><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>SHA-256 verified releases</li>
+   </ul>
+   <p class="footnote">Beta software. Features may vary by device and setup.</p>
+  </div>
+  <div class="orb-stage" aria-hidden="true">
+   <div class="orb" id="orb">
+    <span class="orb-halo"></span>
+    <span class="orb-wave"></span>
+    <span class="orb-wave w2"></span>
+    <span class="orb-sphere"><i class="orb-film"></i><i class="orb-glint"></i></span>
+    <span class="orb-rim"></span>
+    <span class="orb-ignite"></span>
+    <span class="orb-ignite i2"></span>
+    <canvas id="orb-gl" class="orb-gl"></canvas>
+   </div>
+   <div class="orb-hud">
+    <span class="hud-chip c1"><b class="hd"></b>Listening</span>
+    <span class="hud-chip c2"><b class="hd iris"></b>Thinking</span>
+    <span class="hud-chip c3"><b class="hd cyan"></b>Home: 3 lights</span>
+   </div>
+  </div>
+ </div>
+ <a class="scroll-cue" href="#how"><span>See how it works</span><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9.5l6 6 6-6"/></svg></a>
+</section>
+
+<section id="how" class="section how" aria-labelledby="how-title">
+ <div class="section-head">
+  <p class="kicker">01 / How it works</p>
+  <h2 id="how-title">Three steps. No manual.</h2>
+  <p>Install it, talk to it, and let it help. You stay in control of every permission.</p>
+ </div>
+ <ol class="steps">
+  <li class="card step">
+   <span class="step-n" aria-hidden="true">1</span>
+   <h3>Install MYRAA</h3>
+   <p>Download the Windows or Android beta from the official release, and check its checksum.</p>
+  </li>
+  <li class="step-link" aria-hidden="true"><svg class="h-link" viewBox="0 0 60 8" preserveAspectRatio="none"><path d="M0 4H60"/></svg></li>
+  <li class="card step">
+   <span class="step-n" aria-hidden="true">2</span>
+   <h3>Just talk</h3>
+   <p>Say hello or type. MYRAA answers out loud, and voice and text share one conversation.</p>
+  </li>
+  <li class="step-link" aria-hidden="true"><svg class="h-link" viewBox="0 0 60 8" preserveAspectRatio="none"><path d="M0 4H60"/></svg></li>
+  <li class="card step">
+   <span class="step-n" aria-hidden="true">3</span>
+   <h3>It helps, with permission</h3>
+   <p>Switch your lights, remember your preferences, or reach your PC from your phone.</p>
+  </li>
+ </ol>
+</section>
+
+<section id="models" class="section" aria-labelledby="models-title">
+ <div class="section-head">
+  <p class="kicker">02 / Models</p>
+  <h2 id="models-title">One companion. Three minds.</h2>
+  <p>Pick the mode that fits the moment. Every mode keeps the same conversation and memory.</p>
+ </div>
+ <div class="grid models">
+  <article class="card model flux h-tilt">
+   <div class="model-top"><span class="glyph flux" aria-hidden="true"></span><span class="badge ok"><b class="bd"></b>Available</span></div>
+   <h3>MYRAA Flux</h3>
+   <p class="model-for">Best for everyday help</p>
+   <p>Fast everyday answers. Quick questions, reminders, small tasks and casual conversation.</p>
+   <p class="model-note"><span class="quiet">Try saying</span>&ldquo;Remind me to call home at 6.&rdquo;</p>
+  </article>
+  <article class="card model rogue h-tilt">
+   <div class="model-top"><span class="glyph rogue" aria-hidden="true"></span><span class="badge ok"><b class="bd"></b>Available</span><span class="badge adult">18+</span></div>
+   <h3>MYRAA Rogue</h3>
+   <p class="model-for">Adults only</p>
+   <p>Unfiltered conversation for adults. Requires an 18+ confirmation in the app before it can be used.</p>
+   <p class="model-note"><span class="quiet">Age check</span>Off until you confirm you are 18 or older.</p>
+  </article>
+  <article class="card model apex">
+   <div class="model-top"><span class="glyph apex" aria-hidden="true"></span><span class="badge soon">Coming soon</span></div>
+   <h3>MYRAA Apex</h3>
+   <p class="model-for">Deep thinking</p>
+   <p>Deep thinking for harder problems, plus PC control that acts only with your permission. Not yet available in the public edition.</p>
+   <form id="waitlist" class="waitlist" novalidate aria-describedby="waitlist-note">
+    <label for="wl-email">Email for the Apex waitlist</label>
+    <div class="wl-row">
+     <input id="wl-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+     <button id="wl-submit" class="button" type="submit" disabled>Join waitlist</button>
+    </div>
+    <label class="consent"><input id="wl-consent" name="consent" type="checkbox" required> <span>I agree that MYRAA may store this email only to tell me when Apex is available. See the <a href="privacy.html#waitlist">privacy notice</a>.</span></label>
+    <p id="waitlist-note" class="quiet small">No newsletter, no tracking. You can ask for removal at any time.</p>
+    <p id="wl-status" class="wl-status" role="status" aria-live="polite"></p>
+   </form>
+  </article>
+ </div>
+</section>
+
+<section id="features" class="section" aria-labelledby="features-title">
+ <div class="section-head">
+  <p class="kicker">03 / Features</p>
+  <h2 id="features-title">Built to live with you.</h2>
+  <p>All features are in beta. Availability depends on your device, permissions and setup.</p>
+ </div>
+ <div class="grid bento">
+  <article class="card feature b-voice h-tilt">
+   <div class="demo wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+   <span class="ico ico-voice" aria-hidden="true"></span>
+   <h3>Voice conversations</h3>
+   <p>Speak naturally and hear MYRAA answer. Voice and typed messages share one conversation.</p>
+  </article>
+  <article class="card feature b-home h-tilt">
+   <div class="demo home-demo">
+    <input type="checkbox" id="demo-light" class="sw-input">
+    <span class="bulb" aria-hidden="true"><i></i></span>
+    <label class="switch" for="demo-light"><span class="track" aria-hidden="true"><span class="knob"></span></span><span class="switch-label">Try it: living room light</span></label>
+   </div>
+   <span class="ico ico-home" aria-hidden="true"></span>
+   <h3>Smart Home</h3>
+   <p>Control lights and switches on your own ESP32 boards from the app or by voice. Hardware setup required.</p>
+  </article>
+  <article class="card feature b-phone h-tilt">
+   <div class="demo remote" aria-hidden="true">
+    <svg viewBox="0 0 220 90">
+     <rect class="dev" x="14" y="14" width="34" height="62" rx="7"/><rect class="dev-scr" x="19" y="22" width="24" height="42" rx="3"/>
+     <rect class="dev" x="140" y="18" width="66" height="44" rx="5"/><rect class="dev-scr" x="146" y="24" width="54" height="32" rx="2"/><path class="dev" d="M132 70h82"/>
+     <path class="beam" d="M54 45C80 30 110 30 134 40"/>
+     <circle class="ping" cx="31" cy="45" r="10"/><circle class="ping p2" cx="31" cy="45" r="10"/>
+    </svg>
+   </div>
+   <span class="ico ico-phone" aria-hidden="true"></span>
+   <h3>Phone Remote</h3>
+   <p>Use the Android app as a companion to your PC. Pairing and permissions are your choice.</p>
+  </article>
+  <article class="card feature b-memory h-tilt">
+   <div class="demo constel" aria-hidden="true">
+    <svg viewBox="0 0 320 120">
+     <path class="edge" d="M30 86L86 40L150 66L214 28L284 58M86 40L120 100L150 66M214 28L236 96L284 58"/>
+     <circle class="node" cx="30" cy="86" r="3"/><circle class="node n2" cx="86" cy="40" r="4"/><circle class="node" cx="150" cy="66" r="5"/>
+     <circle class="node n2" cx="214" cy="28" r="3.5"/><circle class="node" cx="284" cy="58" r="4"/><circle class="node n3" cx="120" cy="100" r="3"/><circle class="node n3" cx="236" cy="96" r="3"/>
+    </svg>
+    <span class="mem m1">Prefers tea</span><span class="mem m2">Gym at 7</span><span class="mem m3">Likes lo-fi</span>
+   </div>
+   <span class="ico ico-memory" aria-hidden="true"></span>
+   <h3>Memory</h3>
+   <p>MYRAA can remember preferences and context you share, so you repeat yourself less.</p>
+  </article>
+ </div>
+</section>
+
+<section id="privacy" class="section trust" aria-labelledby="trust-title">
+ <div class="section-head">
+  <p class="kicker">04 / Privacy</p>
+  <h2 id="trust-title">Private work stays private.</h2>
+  <p>MYRAA's planned public control plane handles install status, software updates, licences and announcements, not remote control of personal devices.</p>
+ </div>
+ <ul class="grid promises">
+  <li class="card promise"><svg class="bi chk" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><div><h3>Your content stays off our dashboard</h3><p>No screen, chat, voice, contacts, files or keystrokes are collected into the MYRAA owner dashboard.</p></div></li>
+  <li class="card promise"><svg class="bi chk" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><div><h3>Reporting is opt-in</h3><p>Optional usage and crash reporting is off by default. You choose.</p></div></li>
+  <li class="card promise"><svg class="bi chk" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><div><h3>Honest about the network</h3><p>Local actions run on your device. Some AI features may use third-party network services.</p></div></li>
+ </ul>
+ <p class="trust-more"><a href="privacy.html" class="underlink">How privacy works</a></p>
+</section>
+
+<section id="download" class="section downloads" aria-labelledby="download-title">
+ <div class="section-head">
+  <p class="kicker">05 / Download</p>
+  <h2 id="download-title">Download MYRAA</h2>
+  <p>Only verified GitHub Releases are linked. If no release is published, the download stays disabled rather than linking to an unverified installer.</p>
+ </div>
+ <div class="grid two">
+  <article class="card platform" data-os="windows"><div class="device"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5l7-1v7H4zM13 4.2l7-1.2v8.5h-7zM4 13h7v7l-7-1zM13 13h7v8l-7-1.2z"/></svg><span>Windows</span></div><h3>Windows</h3><p>Desktop installer (NSIS beta). PC automation requires your permission and local configuration.</p><div id="windows-release" class="release"><span class="quiet">Checking release manifest...</span></div></article>
+  <article class="card platform" data-os="android"><div class="device"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></svg><span>Android</span></div><h3>Android</h3><p>Android APK beta. Downloads open the official GitHub Release. Installation requires your approval.</p><div id="android-release" class="release"><span class="quiet">Checking release manifest...</span></div></article>
+ </div>
+ <p class="footnote">Review the SHA-256 checksum before installation. Windows builds may show a SmartScreen warning because the installer is unsigned. Android update notifications do not auto-install APKs.</p>
+</section>
+
+<section id="faq" class="section faq-sec" aria-labelledby="faq-title">
+ <div class="section-head">
+  <p class="kicker">06 / FAQ</p>
+  <h2 id="faq-title">Straight answers.</h2>
+ </div>
+ <div class="faq">
+  <details class="card qa"><summary>Is MYRAA finished?</summary><p>No. MYRAA is beta software. Features may vary by device and setup, and you may hit rough edges.</p></details>
+  <details class="card qa"><summary>Why is the download button disabled?</summary><p>We only link verified GitHub Releases. Until a release with a checksum is published, the button stays off on purpose.</p></details>
+  <details class="card qa"><summary>Why does Windows show a SmartScreen warning?</summary><p>The beta installer is unsigned. Check the SHA-256 checksum shown on this page before you install.</p></details>
+  <details class="card qa"><summary>What does Rogue 18+ mean?</summary><p>Rogue is unfiltered conversation for adults. The app asks for an 18+ confirmation before it can be used.</p></details>
+  <details class="card qa"><summary>Do I need special hardware for Smart Home?</summary><p>Yes. Smart Home controls your own ESP32 boards, and they need to be set up first.</p></details>
+  <details class="card qa"><summary>When is Apex coming?</summary><p>There is no date yet. Join the waitlist above and we will email you once, when it is available.</p></details>
+ </div>
+</section>
+</main>
+
+<footer class="foot"><span class="foot-brand"><span class="mark" aria-hidden="true"></span>&copy; 2026 MYRAA. Beta software.</span><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#main">Back to top</a></div></footer>
+</body>
+</html>
